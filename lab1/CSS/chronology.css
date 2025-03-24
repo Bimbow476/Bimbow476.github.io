@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../img/History.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: white;
+    display: block;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo{
+    float: left;
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-top: 2px;
+}
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+
+/* Часова шкала */
+main {
+    padding: 50px 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Центральна лінія */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #f39c12;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Оформлення блоків */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px 0;
+    position: relative;
+}
+
+/* Дати */
+.timeline-date {
+    background: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Контент */
+.timeline-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Чітке вирівнювання подій */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

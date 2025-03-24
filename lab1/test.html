@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестування</title>
+    <link rel="stylesheet" href="CSS/test.css">
+    <script defer src="JS/test.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Історична Платформа">
+        </a>
+        <div class="header-content">
+            <h1>Історична Платформа</h1>
+            <nav>
+                <ul>
+                    <li><a href="chronology.html">Хронологія</a></li>
+                    <li><a href="events.html">Події</a></li>
+                    <li><a href="test.html">Тестування</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Перевірте свої знання з історії</h2>
+        <p>Виберіть правильні відповіді та натисніть "Перевірити".</p>
+
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Коли відбулася Французька революція?</p>
+                <label><input type="radio" name="q1" value="1776"> 1776</label>
+                <label><input type="radio" name="q1" value="1789"> 1789</label>
+                <label><input type="radio" name="q1" value="1812"> 1812</label>
+            </div>
+
+            <div class="question">
+                <p>2. Хто відкрив Америку?</p>
+                <label><input type="radio" name="q2" value="Магеллан"> Магеллан</label>
+                <label><input type="radio" name="q2" value="Колумб"> Колумб</label>
+                <label><input type="radio" name="q2" value="Кук"> Кук</label>
+            </div>
+
+            <div class="question">
+                <p>3. Коли почалася Друга світова війна?</p>
+                <label><input type="radio" name="q3" value="1914"> 1914</label>
+                <label><input type="radio" name="q3" value="1939"> 1939</label>
+                <label><input type="radio" name="q3" value="1945"> 1945</label>
+            </div>
+
+            <button type="submit">Перевірити</button>
+        </form>
+
+        <p id="result"></p>
+    </main>
+
+ <footer>
+    <p>&copy; 2025 Історична Платформа</p>
+</footer>
+
+</body>
+</html>
