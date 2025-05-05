@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../img/History.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+
+/* Заголовок сторінки */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+
+.event {
+    background: rgba(255, 255, 255, 0.832);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.event h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Адаптація */
+@media (max-width: 768px) {
+    .event {
+        width: 90%;
+    }
+
+    .event h3 {
+        font-size: 20px;
+    }
+
+    .event p {
+        font-size: 16px;
+    }
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
