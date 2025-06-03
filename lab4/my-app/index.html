@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Історична Платформа</title>
+</head>
+<body>
+  <h1>Ласкаво просимо до платформи з вивчення історії</h1>
+
+  <div id="auth-section">
+    <h2>Реєстрація</h2>
+    <input type="email" id="register-email" placeholder="Email" />
+    <input type="password" id="register-password" placeholder="Пароль" />
+    <button id="register-button">Зареєструватися</button>
+
+    <h2>Вхід</h2>
+    <input type="email" id="login-email" placeholder="Email" />
+    <input type="password" id="login-password" placeholder="Пароль" />
+    <button id="login-button">Увійти</button>
+  </div>
+
+  <div id="user-section" style="display: none;">
+    <h2>Вітаємо, <span id="user-email"></span>!</h2>
+    <button id="logout-button">Вийти</button>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
